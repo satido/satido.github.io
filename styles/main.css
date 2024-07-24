@@ -7,9 +7,9 @@
 :root {
   --primary-container: #005ecb; /*Blue A200 Dark*/
 
-  --surface: #dddddd; /*Gray 50*/
-  --surface-container: #f5f5f5; /*Gray 100*/
-  --surface-container-high: #c2c2c2; /*Gray 100 Dark*/
+  --surface: #bcbcbc; /*Gray 50*/
+  --surface-container: #ababab; /*Gray 100*/
+  --surface-container-high: #a8a8a8; /*Gray 100 Dark*/
 
   --on-surface: #212121; /*Gray 900*/
   --on-surface-variant: #424242; /*Gray 800*/
