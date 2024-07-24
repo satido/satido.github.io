@@ -7,7 +7,7 @@
 :root {
   --primary-container: #005ecb; /*Blue A200 Dark*/
 
-  --surface: #eaeaea; /*Gray 50*/
+  --surface: #dadada; /*Gray 50*/
   --surface-container: #cdcdcd; /*Gray 100*/
   --surface-container-high: #a8a8a8; /*Gray 100 Dark*/
 
@@ -17,7 +17,7 @@
   --outline-variant: #757575; /*Gray 600*/
 
   --border: #e0e0e0; /*Gray 300*/
-  --button-text1: #9e9e9e; /*Gray 500*/
+  --button-text1: #8c8c8c; /*Gray 500*/
   --button-text1-hover: #707070; /*Gray 500 Dark*/
   --button-text2: #212121; /*Gray 900*/
   --button-text2-hover: #000000; /*Gray 900 Dark*/
