@@ -25,7 +25,7 @@ body {
   
   /* Style for the countdown timer */
   #saticountdown {
-    font-size: 10em; /* Adjust font size as needed */
+    font-size: 6em; /* Adjust font size as needed */
     margin-top: 10px; /* Space between logo and countdown timer */
   }
   
