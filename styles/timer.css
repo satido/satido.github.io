@@ -27,7 +27,7 @@ body {
 #timer-container {
   width: 20em; /* Fixed width to accommodate the widest possible timer display */
   text-align: center; /* Center text within container */
-  font-size: 6em; /* Adjust font size as needed */
+  font-size: 4em; /* Adjust font size as needed */
   line-height: 1.2; /* Adjust line height for vertical alignment */
   white-space: nowrap; /* Prevent line breaks in the timer text */
   overflow: hidden; /* Hide overflow if necessary */
