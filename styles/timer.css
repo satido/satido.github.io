@@ -25,15 +25,17 @@ body {
 
 /* Style for the countdown timer container */
 #timer-container {
-  width: 12em; /* Fixed width to handle varying number widths */
+  width: 20em; /* Fixed width to accommodate the widest possible timer display */
   text-align: center; /* Center text within container */
   font-size: 6em; /* Adjust font size as needed */
   line-height: 1.2; /* Adjust line height for vertical alignment */
   white-space: nowrap; /* Prevent line breaks in the timer text */
+  overflow: hidden; /* Hide overflow if necessary */
+  display: flex; /* Use Flexbox for centering */
+  justify-content: center; /* Center horizontally */
 }
 
 /* Style for the countdown timer */
 #saticountdown {
   display: inline-block; /* Ensures the timer takes only necessary space */
-  width: 100%; /* Take the full width of the container */
 }
