@@ -1,0 +1,30 @@
+/* Ensure the body covers the full viewport height and removes default margin */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dadada;
+    color: #202020;
+    font-family: 'Material Symbols Sharp', sans-serif; /* Adjust if necessary */
+    text-align: center; /* Center the text within its container */
+  }
+  
+  /* Style for the logo */
+  #logo {
+    margin: 0;
+  }
+  
+  #logo img {
+    max-width: 100%; /* Ensure the logo scales well */
+    height: auto;
+    display: block; /* Remove extra space below the image */
+  }
+  
+  /* Style for the countdown timer */
+  #saticountdown {
+    font-size: 2em; /* Adjust font size as needed */
+    margin-top: 10px; /* Space between logo and countdown timer */
+  }
+  
