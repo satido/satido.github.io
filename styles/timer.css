@@ -18,7 +18,7 @@ body {
   }
   
   #logo img {
-    width: 205px; /* Ensure the logo scales well */
+    width: 512px; /* Ensure the logo scales well */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove extra space below the image */
   }
