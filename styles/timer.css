@@ -3,12 +3,13 @@ body {
     margin: 0;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #dadada;
-    color: #202020;
-    font-family: 'Material Symbols Sharp', sans-serif; /* Adjust if necessary */
-    text-align: center; /* Center the text within its container */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
+    background-color: #dadada; /* Background color */
+    color: #202020; /* Text color */
+    font-family: 'Material Symbols Sharp', sans-serif; /* Font family */
+    text-align: center; /* Center text within container */
   }
   
   /* Style for the logo */
@@ -17,8 +18,8 @@ body {
   }
   
   #logo img {
-    max-width: 20%; /* Ensure the logo scales well */
-    height: auto;
+    max-width: 100%; /* Ensure the logo scales well */
+    height: auto; /* Maintain aspect ratio */
     display: block; /* Remove extra space below the image */
   }
   
