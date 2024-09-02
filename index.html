@@ -21,7 +21,7 @@
 <body>
   <!-- logo -->
   <p id="logo">
-    <img src="assets/img/logo.png">
+    <img src="assets/img/timer_logo.png">
   </p>
 
   <!-- countdown timer element -->
@@ -44,15 +44,16 @@
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result
     document.getElementById("saticountdown").innerHTML = days + "d " + hours + "h "
-    + minutes + "m";
+    + minutes + "m " + seconds + "s ";
 
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("saticountdown").innerHTML = "FINISHED...";
+      document.getElementById("saticountdown").innerHTML = "im back.";
     }
   }, 1000);
   </script>
