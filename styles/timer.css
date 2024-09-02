@@ -1,31 +1,39 @@
 /* Ensure the body covers the full viewport height and removes default margin */
 body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center children vertically */
-    align-items: center; /* Center children horizontally */
-    background-color: #dadada; /* Background color */
-    color: #202020; /* Text color */
-    font-family: 'Oswald', sans-serif; /* Font family */
-    text-align: center; /* Center text within container */
-  }
-  
-  /* Style for the logo */
-  #logo {
-    margin: 0;
-  }
-  
-  #logo img {
-    width: 512px; /* Ensure the logo scales well */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove extra space below the image */
-  }
-  
-  /* Style for the countdown timer */
-  #saticountdown {
-    font-size: 6em; /* Adjust font size as needed */
-    margin-top: 10px; /* Space between logo and countdown timer */
-  }
-  
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  background-color: #dadada; /* Background color */
+  color: #202020; /* Text color */
+  font-family: 'Oswald', sans-serif; /* Font family */
+  text-align: center; /* Center text within container */
+}
+
+/* Style for the logo */
+#logo {
+  margin: 0;
+}
+
+#logo img {
+  width: 512px; /* Ensure the logo scales well */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove extra space below the image */
+}
+
+/* Style for the countdown timer container */
+#timer-container {
+  width: 12em; /* Fixed width to handle varying number widths */
+  text-align: center; /* Center text within container */
+  font-size: 6em; /* Adjust font size as needed */
+  line-height: 1.2; /* Adjust line height for vertical alignment */
+  white-space: nowrap; /* Prevent line breaks in the timer text */
+}
+
+/* Style for the countdown timer */
+#saticountdown {
+  display: inline-block; /* Ensures the timer takes only necessary space */
+  width: 100%; /* Take the full width of the container */
+}
