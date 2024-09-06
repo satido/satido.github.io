@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
 
-  <link rel="stylesheet" href="styles/timer.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Martian+Mono">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,1,0">
   <link rel="icon" type="image/png" href="favicon.png"> 
   <script src="scripts/theme.js"></script>
 
@@ -19,45 +19,41 @@
 </head>
 
 <body>
-  <!-- logo -->
-  <p id="logo">
-    <img src="assets/img/timer_logo.png" alt="Logo">
-  </p>
+  <div class="wrapper">
+    <header>
+      <img src="/assets/img/logo.png" alt="Logo of satido." width="200" height="200">
+      <h1>satido</h1>
+      <p>Hello there, I am satido. I generally work on indie game development / game modding but I like to do whatever I'm passionate with so you can find a variety of different projects that I'm involved in some level. Have a look around!</p>
+      <ul>
+        <li><a href="https://github.com/satido/satido.github.io/">View on<strong>GitHub</strong></a></li>
+        <li><a href="https://github.com/satido/satido.github.io/zipball/main/">Download<strong>ZIP File</strong></a></li>
+        <li><a href="https://github.com/satido/satido.github.io/tarball/main/">Download<strong>TAR Ball</strong></a></li>
+      </ul>
+    </header>
+    <section>
+    <hr>
 
-  <!-- countdown timer wrapper -->
-  <div id="timer-container">
-    <p id="saticountdown"></p>
+	  <h1 id="formula1-telemetry-tool">formula1-telemetry-tool</h1>
+	  <h3 id="link"><a href="https://github.com/satido/formula1-telemetry-tool">Link</a></h3>
+	  <h4 id="credits-to-der-ofenmeister">Credits to <a href="https://github.com/der-ofenmeister">der-ofenmeister</a></h4>
+	  <p>This is a very handy tool that I forked and made some slight adjustments to the file structure and readme to make it easier to work with. I might add Turkish language support in the future for Turkish users’ ease of use. Who knows?</p>
+	  <iframe frameborder="0" scrolling="yes" style="width:100%; height:370px;" allow="clipboard-write" src="https://emgithub.com/iframe.html?target=https%3A%2F%2Fgithub.com%2Fsatido%2Fformula1-telemetry-tool%2Fblob%2Fmain%2FREADME.md&style=stackoverflow-dark&type=markdown&showBorder=on&showLineNumbers=on&showFileMeta=on&showFullPath=on&showCopy=on"></iframe>
+    <p> </p>
+	  <hr>
+
+	  <h1 id="pnrtscr-jumpscare">pnrtscr-jumpscare</h1>
+	  <h3 id="link-1"><a href="https://github.com/satido/pnrtscr-jumpscare">Link</a></h3>
+	  <p>This is pretty broken at the moment but if any of you want to fix it, I won’t stop you.</p>
+
+	  <hr>
+    </section>
+    <footer>
+      <p><button class="material-symbols-sharp" id="theme-toggle" title="Toggle dark mode" onclick="toggleDarkMode()"></button></p>
+      <p>This project is maintained by <a href="https://github.com/satido/">M. Yiğit Ateş</a></p>
+      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist/">orderedlist</a></small></p>
+    </footer>
   </div>
-
-  <script>
-  // Set the date
-  var countDownDate = new Date("Jun 25, 2025 12:00:00").getTime();
-
-  // Update every 1 second
-  var x = setInterval(function() {
-
-    // Get today's date
-    var now = new Date().getTime();
-
-    // Find the distance between
-    var distance = countDownDate - now;
-
-    // Time calculations
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Display the result
-    document.getElementById("saticountdown").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-
-    // If the count down is finished, write some text
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("saticountdown").innerHTML = "im back.";
-    }
-  }, 1000);
-  </script>
+  <script src="scripts/scale.fix.js"></script>
 </body>
+
 </html>

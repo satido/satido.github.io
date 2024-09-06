@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>satido</title>
+
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+  <link rel="stylesheet" href="styles/timer.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Martian+Mono">
+  <link rel="icon" type="image/png" href="favicon.png"> 
+  <script src="scripts/theme.js"></script>
+
+  <!-- Primary meta tags -->
+  <meta name="title" content="satido's page">
+  <meta name="description" content="Minimalistic webpage for my work.">
+</head>
+
+<body>
+  <!-- logo -->
+  <p id="logo">
+    <img src="assets/img/timer_logo.png" alt="Logo">
+  </p>
+
+  <!-- countdown timer wrapper -->
+  <div id="timer-container">
+    <p id="saticountdown"></p>
+  </div>
+
+  <script>
+  // Set the date
+  var countDownDate = new Date("Jun 25, 2025 12:00:00").getTime();
+
+  // Update every 1 second
+  var x = setInterval(function() {
+
+    // Get today's date
+    var now = new Date().getTime();
+
+    // Find the distance between
+    var distance = countDownDate - now;
+
+    // Time calculations
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result
+    document.getElementById("saticountdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("saticountdown").innerHTML = "im back.";
+    }
+  }, 1000);
+  </script>
+</body>
+</html>
