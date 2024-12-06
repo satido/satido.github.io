@@ -25,7 +25,8 @@ noscript {
 
 body,
 noscript {
-    background-color: var(--color-dark-mode)
+    background-color: var(--color-dark-mode);
+    cursor: none
 }
 
 .main,
