@@ -96,9 +96,9 @@ html {
     --color-light-mode: #ece7e1;
     --color-ddd-color: #ddd;
     --color-gray: #c4c4c4;
-    --color-purple: #8000ff;
-    --color-light-purple: #cf59e6;
-    --color-light-blue: #6bc5f8;
+    --color-purple: #8f8f8f;
+    --color-light-purple: #c5c5c5;
+    --color-light-blue: #030303;
     --color-navbarBorder-dark: #e2e2e207;
     --color-shadowDark: rgba(0, 0, 0, 0.137);
     --static-heading-gradient-blue: #b0f3f1;
@@ -460,22 +460,6 @@ noscript {
     border-radius: 50%
 }
 
-.popup {
-    animation: 3s linear pop-up
-}
-
-@keyframes pop-up {
-    from {
-        bottom: -50px;
-        left: 50px;
-        opacity: 1
-    }
-
-    to {
-        opacity: 0
-    }
-}
-
 .logo-top {
     height: 100%;
     justify-content: center;
@@ -524,10 +508,6 @@ noscript {
     width: 3.5px;
     height: 3.5px;
     background: #241010
-}
-
-.logo:hover {
-    transform: translateY(200px)
 }
 
 .activeThistab:before {
