@@ -710,8 +710,6 @@ noscript {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-color: #03e6ff;
-    -webkit-animation: .9s both jello-vertical;
-    animation: .9s both jello-vertical
 }
 
 #backtotopbutton,
