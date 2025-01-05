@@ -126,7 +126,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #8000ff
+    background-color: #3fc38a
 }
 
 .cursor-inner {
@@ -1006,11 +1006,11 @@ noscript {
 }
 
 .dp::before {
-    box-shadow: 2px 2px 0 inset #8000ff, -2px -2px 0 inset transparent
+    box-shadow: 2px 2px 0 inset #3fc38a, -2px -2px 0 inset transparent
 }
 
 .dp::after {
-    box-shadow: 2px 2px 0 inset transparent, -2px -2px 0 inset #8000ff
+    box-shadow: 2px 2px 0 inset transparent, -2px -2px 0 inset #3fc38a
 }
 
 .dp:hover::after {
@@ -1178,7 +1178,6 @@ footer {
 
 .faviconforProject {
     width: 30px;
-    border-radius: 50%
 }
 
 .faviconforProjectAquaregia {
