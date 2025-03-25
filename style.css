@@ -555,7 +555,7 @@ noscript {
 #name {
     font-size: 20rem;
     width:fit-content;
-    margin-bottom: -8rem;
+    margin-bottom: -0.4em;
 }
 
 @-webkit-keyframes vibrate-1 {
@@ -1151,7 +1151,7 @@ footer {
 }
 
 .faviconforProject {
-    width: 300px;
+    width: 200px;
     margin-bottom: -1.5rem;
 }
 
