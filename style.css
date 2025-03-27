@@ -1364,6 +1364,10 @@ footer {
     height: 100px
 }
 
+.kofi {
+    margin-top: 0.5em;
+}
+
 .getintouch-heading,
 .logos {
     height: 80px;
